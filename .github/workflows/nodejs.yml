@@ -21,9 +21,6 @@ jobs:
     steps:
     - name: deploy
       uses: appleboy/ssh-action@master
-      env:
-        # ACCESSKEYID: ${{ secrets.ACCESSKEYID }}
-        # ACCESSKEYSECRET: ${{ secrets.ACCESSKEYSECRET }}
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
